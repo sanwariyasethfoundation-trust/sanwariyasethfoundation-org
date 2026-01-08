@@ -13,7 +13,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-red-50 flex items-center justify-center pt-16 relative overflow-hidden">
+    <section className="mt-10 min-h-screen bg-gradient-to-br from-cyan-50 via-white to-red-50 flex items-center justify-center pt-16 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>

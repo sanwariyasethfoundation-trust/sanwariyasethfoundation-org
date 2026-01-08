@@ -56,19 +56,19 @@ export default function AboutSection() {
 
           <div className="grid grid-cols-2 gap-4">
             <Card className="bg-gradient-to-br from-cyan-50 to-cyan-100 border-0 p-6 text-center transform hover:scale-105 transition-transform">
-              <div className="text-4xl font-bold text-cyan-600 mb-2">50K+</div>
+              <div className="text-4xl font-bold text-cyan-600 mb-2">5000+</div>
               <p className="text-gray-700 font-medium">Lives Impacted</p>
             </Card>
             <Card className="bg-gradient-to-br from-red-50 to-red-100 border-0 p-6 text-center transform hover:scale-105 transition-transform">
-              <div className="text-4xl font-bold text-red-600 mb-2">200+</div>
+              <div className="text-4xl font-bold text-red-600 mb-2">70+</div>
               <p className="text-gray-700 font-medium">Active Volunteers</p>
             </Card>
             <Card className="bg-gradient-to-br from-cyan-50 to-cyan-100 border-0 p-6 text-center transform hover:scale-105 transition-transform">
-              <div className="text-4xl font-bold text-cyan-600 mb-2">15+</div>
+              <div className="text-4xl font-bold text-cyan-600 mb-2">1+</div>
               <p className="text-gray-700 font-medium">Years of Service</p>
             </Card>
             <Card className="bg-gradient-to-br from-red-50 to-red-100 border-0 p-6 text-center transform hover:scale-105 transition-transform">
-              <div className="text-4xl font-bold text-red-600 mb-2">30+</div>
+              <div className="text-4xl font-bold text-red-600 mb-2">10+</div>
               <p className="text-gray-700 font-medium">Projects Running</p>
             </Card>
           </div>

@@ -59,15 +59,16 @@ export default function ImpactSection() {
   }, [])
 
   const stats = [
-    { label: "Children Educated", value: 12500, icon: "📚" },
-    { label: "Healthcare Beneficiaries", value: 8300, icon: "⚕️" },
-    { label: "Meals Distributed", value: 125000, icon: "🍲" },
-    { label: "Funds Raised", value: 2500000, format: true, icon: "💰" },
+    { label: "Children Educated", value: "100+", icon: "📚" },
+    { label: "Healthcare Beneficiaries", value: "50+", icon: "⚕️" },
+    { label: "Meals Distributed", value: "1500+", icon: "🍲" },
+    { label: "Funds Raised", value: "₹2.5 Lakh+", icon: "💰" },
+    { label: "Street Dogs Fed/Helped", value: "100+", icon: "🐕" },
   ]
 
   return (
     <section id="impact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white" ref={ref}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div
           className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
@@ -75,23 +76,17 @@ export default function ImpactSection() {
           <p className="text-xl text-gray-600">See the difference we've made together</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
           {stats.map((stat, idx) => (
             <div
               key={idx}
-              className={`text-center transform transition-all duration-500 ${
-                isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
-              }`}
+              className={`text-center transform transition-all duration-500 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
+                }`}
               style={{ transitionDelay: isVisible ? `${idx * 150}ms` : "0ms" }}
             >
               <div className="text-5xl mb-4">{stat.icon}</div>
-              <div className="text-5xl sm:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-red-600 mb-2">
-                {stat.format ? "₹" : ""}
-                {stat.value > 1000 && stat.format
-                  ? (stat.value / 100000).toFixed(1) + "M"
-                  : stat.value > 1000
-                    ? (stat.value / 1000).toFixed(0) + "K"
-                    : stat.value}
+              <div className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-red-600 mb-2">
+                {stat.value}
               </div>
               <p className="text-gray-600 font-medium">{stat.label}</p>
             </div>

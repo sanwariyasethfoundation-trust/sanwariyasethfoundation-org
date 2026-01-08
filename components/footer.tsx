@@ -23,15 +23,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm">
                 <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>Your City, Country</span>
+                <span>184, Kasai Baba Nainagarh Nagra, Jhansi (U.P)</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 9621515197</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>info@sanwariya.org</span>
+                <span>sanwaryasethfoundation@gmail.com</span>
               </div>
             </div>
           </div>
@@ -105,20 +105,29 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4">Follow Us</h4>
             <div className="flex gap-4 mb-6">
               <a
-                href="#"
+                href="https://facebook.com/Sanwariya Seth Foundation Trust"
+                target="_blank"
+                rel="noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/Sanwariyas57791"
+                target="_blank"
+                rel="noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/sanwariya_sethfoundation"
+                target="_blank"
+                rel="noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -135,7 +144,11 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; {currentYear} Sanwariya Seth Foundation. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+            <p>REG: 185/2025</p>
+            <p>&copy; {currentYear} Sanwariya Seth Foundation. All rights reserved.</p>
+            <p>DARPAN ID: UP/2025/0892977</p>
+          </div>
           <p className="mt-2">Built with ❤️ for social impact</p>
         </div>
       </div>
