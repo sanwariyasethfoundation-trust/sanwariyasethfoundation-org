@@ -32,6 +32,13 @@ export async function POST(req: Request) {
             return NextResponse.json({ error: "Missing required fields" }, { status: 400 })
         }
 
+        if (process.env.NODE_ENV === 'production') {
+            // In production (e.g., Vercel), we can't write to the filesystem.
+            // Log the data for now, or connect to a database in the future.
+            console.log("Volunteer Registration (Production):", { name, email, phone, availability })
+            return NextResponse.json({ success: true, message: "Volunteer registered successfully received (Production Mode)" })
+        }
+
         const volunteers = getVolunteers()
         const duplicate = volunteers.find((v: any) => v.phone === phone)
 
