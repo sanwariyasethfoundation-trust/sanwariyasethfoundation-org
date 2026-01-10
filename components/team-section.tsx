@@ -244,6 +244,26 @@ export default function TeamSection() {
           </div>
         </div>
       </div>
+
+      {/* Full Team Photo Section */}
+      <div
+        className={`mt-24 transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+      >
+        <div className="text-center mb-10">
+          <h3 className="text-3xl font-bold text-gray-900">Our <span className="text-red-600">Full Team</span></h3>
+          <p className="text-gray-600 mt-2">Together we can make a difference</p>
+        </div>
+
+        <div className="relative w-full h-[300px] sm:h-[500px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+          <Image
+            src="/Red and Yellow Modern International Human Rights Day Instagram Story-1~2.jpg"
+            alt="Sanwariya Seth Foundation Full Team"
+            fill
+            className="object-contain bg-gray-50"
+          />
+        </div>
+      </div>
     </section>
   )
 }
