@@ -150,6 +150,69 @@ export default function Footer() {
             <p>DARPAN ID: UP/2025/0892977</p>
           </div>
           <p className="mt-2">Built with ❤️ for social impact</p>
+
+          {/* Credits Section */}
+          <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+            {/* Designed By */}
+            <div className="flex items-center gap-4">
+              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gray-700">
+                <img
+                  src="/image.png"
+                  alt="Panthar Infohub"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="text-left">
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Designed By</p>
+                <h5 className="font-semibold text-white">Panthar Infohub</h5>
+                <div className="flex gap-2 mt-1">
+                  <a
+                    href="https://www.pantharinfohub.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-cyan-400 transition-colors"
+                  >
+                    <span className="sr-only">Website</span>
+                    <MapPin className="w-5 h-5" />
+                  </a>
+                  <a href="mailto:abhay@panthat.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                    <span className="sr-only">Email</span>
+                    <Mail className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Developed By */}
+            <div className="flex items-center gap-4">
+              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-gray-700">
+                <img
+                  src="/image copy.png"
+                  alt="Nikhil Raikwar"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="text-right">
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Developed By</p>
+                <h5 className="font-semibold text-white">Nikhil Raikwar</h5>
+                <div className="flex justify-start gap-2 mt-1">
+                  <a
+                    href="https://in.linkedin.com/in/nikhil-raikwar-102ab636b"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-cyan-400 transition-colors"
+                  >
+                    <span className="sr-only">LinkedIn</span>
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a href="mailto:nikhilraikwar846@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                    <span className="sr-only">Email</span>
+                    <Mail className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </footer>
