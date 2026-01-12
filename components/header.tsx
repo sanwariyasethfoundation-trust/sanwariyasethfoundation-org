@@ -36,14 +36,14 @@ export default function Header() {
       </div>
 
       <div
-        className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-lg py-2" : "bg-white/95 backdrop-blur-sm py-4"
+        className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-lg py-2" : "bg-white/95 backdrop-blur-sm py-2"
           }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 relative shrink-0">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 relative shrink-0">
                 <Image src="/logo.png" alt="Sanwariya Seth Foundation Logo" fill className="object-contain" priority />
               </div>
             </div>
@@ -81,10 +81,10 @@ export default function Header() {
 
               {/* Donate Button (Visible on Mobile & Desktop) */}
               <Button
-                className="bg-pink-400 hover:bg-pink-500 text-white rounded-full w-14 h-14 sm:w-24 sm:h-24 flex flex-col items-center justify-center gap-0 sm:gap-1 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 shrink-0"
+                className="bg-pink-400 hover:bg-pink-500 text-white rounded-full w-12 h-12 sm:w-16 sm:h-16 flex flex-col items-center justify-center gap-0 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 shrink-0"
               >
-                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider leading-none">Donate</span>
-                <span className="text-[10px] sm:text-sm font-bold leading-none">NOW</span>
+                <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider leading-none">Donate</span>
+                <span className="text-[9px] sm:text-xs font-bold leading-none">NOW</span>
               </Button>
 
               {/* Hamburger Menu Button */}
