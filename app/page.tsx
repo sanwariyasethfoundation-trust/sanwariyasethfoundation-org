@@ -28,6 +28,16 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Header />
       <HeroSection />
+
+      {/* Registration Details Banner */}
+      <div className="bg-blue-900 text-white py-4 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-4 text-center sm:text-left text-sm sm:text-base font-semibold tracking-wide">
+          <span>Niti Aayog Darpan ID: UP/2025/0892977</span>
+          <span className="hidden sm:block text-cyan-400">|</span>
+          <span>REG: 185/2025</span>
+        </div>
+      </div>
+
       <AboutSection />
       <CausesSection />
       <ImpactSection />
