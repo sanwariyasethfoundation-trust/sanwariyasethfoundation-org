@@ -51,21 +51,19 @@ export default function DonateSection() {
             <div className="flex gap-4">
               <button
                 onClick={() => setDonationType("once")}
-                className={`flex-1 py-3 px-4 rounded-lg font-medium transition-all ${
-                  donationType === "once"
+                className={`flex-1 py-3 px-4 rounded-lg font-medium transition-all ${donationType === "once"
                     ? "bg-red-500 text-white shadow-lg"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
+                  }`}
               >
                 One-Time Donation
               </button>
               <button
                 onClick={() => setDonationType("monthly")}
-                className={`flex-1 py-3 px-4 rounded-lg font-medium transition-all ${
-                  donationType === "monthly"
+                className={`flex-1 py-3 px-4 rounded-lg font-medium transition-all ${donationType === "monthly"
                     ? "bg-red-500 text-white shadow-lg"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
+                  }`}
               >
                 Monthly Support
               </button>
@@ -83,11 +81,10 @@ export default function DonateSection() {
                     setSelectedAmount(amount)
                     setCustomAmount("")
                   }}
-                  className={`py-3 px-2 rounded-lg font-bold transition-all ${
-                    selectedAmount === amount && !customAmount
+                  className={`py-3 px-2 rounded-lg font-bold transition-all ${selectedAmount === amount && !customAmount
                       ? "bg-cyan-500 text-white shadow-lg scale-105"
                       : "bg-gray-100 text-gray-800 hover:bg-gray-200"
-                  }`}
+                    }`}
                 >
                   ₹{amount}
                 </button>
@@ -132,7 +129,6 @@ export default function DonateSection() {
             <p className="text-center text-sm text-gray-600 mb-4">Your donation is secure and 100% tax-deductible</p>
             <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-700">
               <span className="flex items-center gap-1">🔒 SSL Encrypted</span>
-              <span className="flex items-center gap-1">✓ 80G Exemption</span>
               <span className="flex items-center gap-1">✓ NGO Certified</span>
             </div>
           </div>

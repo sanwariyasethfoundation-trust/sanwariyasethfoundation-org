@@ -30,8 +30,8 @@ export default function Header() {
       {/* Top Bar with IDs */}
       <div className="bg-white py-2 border-b border-gray-100 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center gap-8 text-sm font-medium text-blue-900">
-          <span>Niti Aayog Darpan ID: UP/2025/0892977</span>
-          <span>80G Number: AAHAG4930BF20241</span>
+          <span>REG: 185/2025</span>
+          <span>DARPAN ID: UP/2025/0892977</span>
         </div>
       </div>
 
@@ -100,7 +100,7 @@ export default function Header() {
               {/* Mobile IDs */}
               <div className="text-xs text-center text-gray-500 my-4 space-y-1 bg-gray-50 py-2">
                 <p>REG: 185/2025</p>
-                <p>80G Number: AAHAG4930BF20241</p>
+                <p>DARPAN ID: UP/2025/0892977</p>
               </div>
 
               {navItems.map((item) => (
