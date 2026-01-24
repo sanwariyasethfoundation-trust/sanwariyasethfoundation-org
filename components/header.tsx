@@ -4,10 +4,13 @@ import { useState, useEffect } from "react"
 import { Menu, X, Facebook, Instagram, Twitter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
@@ -15,7 +18,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const navItems = [
+  const navItems: { label: string; href: string; highlight?: boolean }[] = [
     { label: "About", href: "#about" },
     { label: "Causes", href: "#causes" },
     { label: "Impact", href: "#impact" },
@@ -23,6 +26,7 @@ export default function Header() {
     { label: "Testimonials", href: "#testimonials" },
     { label: "Gallery", href: "#gallery" },
     { label: "Volunteer", href: "#volunteer" },
+    { label: "JGPL 2026", href: "/events/jgpl-2026", highlight: true },
   ]
 
   return (
@@ -42,11 +46,11 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <div className="w-10 h-10 sm:w-14 sm:h-14 relative shrink-0">
                 <Image src="/logo.png" alt="Sanwariya Seth Foundation Logo" fill className="object-contain" priority />
               </div>
-            </div>
+            </Link>
 
             {/* Actions Container (Socials + Donate + Menu) */}
             <div className="flex items-center gap-2 sm:gap-4 md:gap-8">
@@ -104,13 +108,14 @@ export default function Header() {
               </div>
 
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
                   href={item.href}
-                  className="block text-gray-700 hover:text-cyan-500 py-2 text-sm font-medium text-center hover:bg-gray-50 bg-white"
+                  className={`block text-gray-700 hover:text-cyan-500 py-2 text-sm font-medium text-center hover:bg-gray-50 bg-white ${item.highlight ? 'text-blue-600 font-bold bg-blue-50' : ''}`}
+                  onClick={() => setIsOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </nav>
           )}
