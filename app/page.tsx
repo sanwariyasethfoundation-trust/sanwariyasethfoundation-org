@@ -12,6 +12,7 @@ import VolunteerSection from "@/components/volunteer-section"
 import TestimonialsSection from "@/components/testimonials-section"
 import Footer from "@/components/footer"
 import TeamSection from "@/components/team-section"
+import JGPLFloatingBadge from "@/components/jgpl-floating-badge"
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -27,6 +28,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
+      <JGPLFloatingBadge />
       <HeroSection />
 
       {/* Registration Details Banner */}
