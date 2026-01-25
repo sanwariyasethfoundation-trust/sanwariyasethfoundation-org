@@ -209,7 +209,7 @@ export default function JGPLPage() {
                     <Shield className="w-6 h-6 text-slate-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-800">Sanwariya Seth Foundation</h3>
+                    <h3 className="text-lg font-bold text-slate-800">Sanwariya Seth Foundation</h3>
                     <p className="text-slate-600">Event Organizer</p>
                   </div>
                 </li>
@@ -218,8 +218,8 @@ export default function JGPLPage() {
                     <Shield className="w-6 h-6 text-slate-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-800">A-1 Property’s</h3>
-                    <p className="text-slate-600">Co-Organizer Jhansi (U.P.)</p>
+                    <h3 className="text-lg font-bold text-slate-800">A-1 Property’s Jhansi (U.P.)</h3>
+                    <p className="text-slate-600">Co-Organizer</p>
                   </div>
                 </li>
               </ul>
