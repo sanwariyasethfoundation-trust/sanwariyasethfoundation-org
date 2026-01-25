@@ -4,6 +4,7 @@ import Footer from "@/components/footer"
 import { Trophy, Calendar, MapPin, Users, Award, Phone, Share2, Medal, Target, Shield } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import JGPLMatchSchedule from "@/components/jgpl-schedule"
 
 export const metadata: Metadata = {
   title: "JGPL 2026 | Jhansi Gramin Premier League Cricket Tournament",
@@ -102,6 +103,9 @@ export default function JGPLPage() {
            </div>
         </div>
       </section>
+
+      {/* Match Schedule */}
+      <JGPLMatchSchedule />
 
       {/* Prizes Section */}
       <section className="py-20 bg-slate-50">
@@ -215,7 +219,7 @@ export default function JGPLPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-800">A-1 Property’s</h3>
-                    <p className="text-slate-600">Co-Organizer</p>
+                    <p className="text-slate-600">Co-Organizer Jhansi (U.P.)</p>
                   </div>
                 </li>
               </ul>
